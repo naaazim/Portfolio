@@ -1,41 +1,123 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="author" content="Nazim Hamia">
+    <meta property="og:image" content="https://www.nazimhamia.fr/logo.png" />
+    <meta property="og:image:type" content="image/png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:title" content="Nazim Hamia" />
+    <meta property="og:description" content="Je rends le code aussi beau que l’idée qu’il soutient." />
+    <meta property="og:url" content="https://www.nazimhamia.fr" />
+    <meta property="og:type" content="website" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio Nazim</title>
     <link rel="stylesheet" href="style.css" type="text/css">
     <link rel="icon" href="logo.png" type="image/png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" /> 
 </head>
 <body>
     <nav>
         <a href="" class="logo">NH</a>
-        <ul>
+        <ul class="ordi">
             <li>
-                <a href="#" class="mesLiens">A propos</a>
+                <a href="#a-propos" class="mesLiens">A propos</a>
             </li>
             
             <li>
                 <a href="#" class="mesLiens">Mes projets</a>
             </li>
             <li>
-                <a href="contact/index.html" class="mesLiens">Contact</a>
+                <a href="#contact" class="mesLiens">Contact</a>
             </li>
         </ul>
         <div class="liens">
+            <button id="themeToggle" aria-label="Changer de thème">
+                <svg id="iconTheme" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="theme-icon" width="30" height="30">
+                     <path stroke-linecap="round" stroke-linejoin="round" d="M21.752 15.002A9.72 9.72 0 0 1 18 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 0 0 3 11.25 C3 16.635 7.365 21 12.75 21a9.753 9.753 0 0 0 9.002-5.998Z" />
+                </svg>
+            </button>
             <a href="https://github.com/naaazim"><i class="fa fa-github" style="font-size:40px"></i></a>
-            <a href="CV-Abderahmane_Nazim_HAMIA.pdf" class="cv">Télécharger le CV</a>
+            <a href="cvnazim.pdf" class="cv">Télécharger le CV</a>
+        </div>
+        <div class="hamburger" aria-label="menu">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="30" height="30">
+                <path class="icon-path burger" d="M3.75 6.75h16.5M3.75 12h16.5M12 17.25h8.25"
+                      stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <path class="icon-path close" d="M6 18L18 6M6 6l12 12"
+                      stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            <div class="navigation">
+                <h2>MENU</h2>
+                <ul class="mobile">
+                    <li><a href="#a-propos" class="mesLiens">A propos</a></li>
+                    <li><a href="#" class="mesLiens">Mes projets</a></li>
+                    <li><a href="#contact" class="mesLiens">Contact</a></li>
+                    <li><a href="https://github.com/naaazim" class="mesLiens">Répertoire GitHub</a></li>
+                </ul>
+            </div>
         </div>
     </nav>
-    <main>
+    <main id="a-propos">
         <section class="hero">
             <div class="hero-content">
                 <h1 class="nom">Abderahmane Nazim HAMIA</h1>
                 <p class="subtitle">DÉVELOPPEUR WEB FULL-STACK</p>
-                <p class="hero-text">Je crée des solutions web performantes et intuitives</p>
+                <p class="hero-text">À la croisée du design et du développement, je transforme des lignes de code en expériences digitales fluides, esthétiques et percutantes.</p>
             </div>
         </section>
     </main>
+    <section class="maitrise">
+        <h2>Compétences :</h2>
+        <div class="gauche"></div>
+        <div class="droite"></div>
+        <div class="icones">
+            <i class="devicon-html5-plain colored"></i>
+            <i class="devicon-css3-plain colored"></i>
+            <i class="devicon-javascript-plain colored"></i>
+            <i class="devicon-php-plain colored"></i>
+            <i class="devicon-java-plain colored"></i>
+            <i class="devicon-postgresql-plain colored"></i>
+            <i class="devicon-postman-plain colored"></i>
+            <i class="devicon-react-original colored"></i>
+            <i class="devicon-python-plain colored"></i>
+            <i class="devicon-c-plain colored"></i>
+            <!-- Deuxieme fois pour fluidifier le slider infini -->
+            <i class="devicon-html5-plain colored"></i>
+            <i class="devicon-css3-plain colored"></i>
+            <i class="devicon-javascript-plain colored"></i>
+            <i class="devicon-php-plain colored"></i>
+            <i class="devicon-java-plain colored"></i>
+            <i class="devicon-postgresql-plain colored"></i>
+            <i class="devicon-postman-plain colored"></i>
+            <i class="devicon-react-original colored"></i>
+            <i class="devicon-python-plain colored"></i>
+            <i class="devicon-c-plain colored"></i>           
+        </div>
+    </section>
+    <section class="contact" id="contact">
+        <h2>CONTACT</h2>
+        <form action="index.php" method="post">
+            <label for="nom">Nom:</label>
+            <input type="text" name="nom" id="nom">
+
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email" required>
+
+            <label for="message">Message:</label>
+            <textarea name="message" id="message"></textarea>
+            <div class="div-soumission">
+                <button type="submit" class="envoyer">Envoyer</button>
+            </div>
+        </form>
+    </section>
+    <div id="popUp" style="display: none;">
+        <p>Votre message a bien été envoyé</p>
+        <img src="success.gif" alt="succes" width="120">
+        <button class="fermer" onclick="fermer()">&#10005;</button>
+    </div>
+    <script src="contact/script.js"></script>
 </body>
 </html>
