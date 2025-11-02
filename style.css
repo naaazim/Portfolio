@@ -7,6 +7,7 @@
 }
 html{
     scroll-behavior: smooth;
+    scroll-padding: 100px;
 }
 body{
     background-color: transparent;
@@ -577,6 +578,157 @@ footer p{
     font-size: 12px;
     letter-spacing: 2px;
     color: #fff;
+}
+/* ------------------- SECTION MES PROJETS ------------------- */
+.projets {
+  font-size: 13px;
+  margin: 100px auto;
+  width: 80%;
+  text-align: center;
+  font-family: "Bungee", sans-serif;
+}
+
+.projets h1 {
+  color: #fff;
+  text-shadow: 0 0 15px #5F00D2, 0 0 25px #5F00D2;
+  margin-bottom: 60px;
+  letter-spacing: 2px;
+}
+
+.liste-projets {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 60px;
+}
+
+.projet {
+  width: 400px;
+  border: 2px solid #5F00D2;
+  box-shadow: 0 0 20px rgba(95, 0, 210, 0.7);
+  border-radius: 20px;
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 30px;
+  text-align: left;
+  transition: transform 0.5s ease, box-shadow 0.3s ease;
+}
+
+.projet:hover {
+  transform: translateY(-10px) scale(1.03);
+  box-shadow: 0 0 35px #5F00D2;
+}
+
+.projet h3 {
+  font-size: 1.3rem;
+  color: #fff;
+  text-shadow: 0 0 10px #5F00D2;
+  margin-bottom: 15px;
+}
+
+.projet .description {
+  color: #dcdcdc;
+  font-family: system-ui;
+  font-size: 0.9rem;
+  line-height: 1.7;
+  text-align: justify;
+  margin-bottom: 25px;
+}
+
+/* Bloc d'infos techniques */
+.projet .infos {
+  background: rgba(95, 0, 210, 0.1);
+  border: 1px solid rgba(95, 0, 210, 0.4);
+  border-radius: 15px;
+  padding: 20px;
+}
+.projets{
+    margin-top: -200px;
+}
+.projet .infos p {
+  color: #fff;
+  font-family: system-ui;
+  font-size: 0.9rem;
+  margin-bottom: 10px;
+}
+
+.projet .infos span {
+  font-weight: bold;
+  color: #b589ff;
+  min-width: 120px;
+  display: inline-block;
+}
+
+.projet a {
+  color: #7f4eff;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.projet a:hover {
+  color: #b089ff;
+  text-shadow: 0 0 8px #5F00D2;
+}
+
+/* --- Mode clair --- */
+body.light-mode .projets h1 {
+  color: #000;
+  text-shadow: 0 0 15px #aaa;
+}
+
+body.light-mode .projet {
+  background-color: #fff;
+  border: 1px solid #000;
+  box-shadow: 0 0 15px #5F00D2;
+}
+
+body.light-mode .projet:hover {
+  box-shadow: 0 0 25px #5F00D2;
+}
+
+body.light-mode .projet h3,
+body.light-mode .projet .description,
+body.light-mode .projet .infos p {
+  color: #000;
+}
+
+body.light-mode .projet .infos {
+  background: rgba(0, 0, 0, 0.05);
+  border-color: #000;
+}
+
+body.light-mode .projet .infos span {
+  color: #5F00D2;
+}
+
+body.light-mode .projet a {
+  color: #000;
+}
+
+/* Mode clair */
+body.light-mode .projets {
+  color: #000;
+}
+
+body.light-mode .projets h1 {
+  text-shadow: 5px 5px 5px #aaa;
+}
+
+body.light-mode .projet {
+  border-color: #000;
+  box-shadow: 2px 2px 10px #5F00D2;
+}
+
+body.light-mode .projet h3,
+body.light-mode .projet p,
+body.light-mode .projet li {
+  color: #000;
+}
+
+body.light-mode .projet a {
+  color: #000;
+}
+body.light-mode .projet h3{
+    text-shadow: 5px 5px 5px #aaa;
 }
 /* mode clair */
 /* ------------------- LIGHT MODE ------------------- */
