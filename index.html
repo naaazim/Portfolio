@@ -1,230 +1,301 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="author" content="Nazim Hamia">
-    <meta name="description" content="Je m'appelle Nazim, j'ai 20 ans et je suis étudiant en informatique. Découvrez mon portfolio et mes projets de développement."/>
-    <meta property="og:image" content="https://www.nazimhamia.fr/logo2.png" />
-    <meta property="og:image:type" content="image/png">
-    <meta property="og:image:width" content="1200">
-    <meta property="og:image:height" content="630">
-    <meta property="og:title" content="Nazim Hamia" />
-    <meta property="og:description" content="Je rends le code aussi beau que l’idée qu’il soutient." />
-    <meta property="og:url" content="https://www.nazimhamia.fr" />
-    <meta property="og:type" content="website" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio Nazim</title>
-    <link rel="stylesheet" href="style.css" type="text/css">
+    <meta name="author" content="Nazim Hamia">
+    <meta name="description"
+        content="Portfolio de Nazim Hamia, Développeur Web Full-Stack. Découvrez mes projets, compétences et certifications.">
+
+    <!-- Open Graph -->
+    <meta property="og:image" content="https://www.nazimhamia.fr/logo2.png">
+    <meta property="og:image:type" content="image/png">
+    <meta property="og:title" content="Nazim Hamia - Portfolio">
+    <meta property="og:description" content="Je rends le code aussi beau que l'idée qu'il soutient.">
+    <meta property="og:url" content="https://www.nazimhamia.fr">
+    <meta property="og:type" content="website">
+
+    <title>Nazim Hamia | Développeur Full-Stack</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="style.css">
     <link rel="icon" href="logo.png" type="image/png">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" /> 
 </head>
+
 <body>
-    <div class="container"></div>
+    <div class="background-gradient"></div>
 
-    <nav>
-        <a href="" class="logo">NH</a>
-        <ul class="ordi">
-            <li><a href="#a-propos" class="mesLiens">A propos</a></li>
-            <li><a href="#projets" class="mesLiens">Mes projets</a></li>
-            <li><a href="#contact" class="mesLiens">Contact</a></li>
-        </ul>
-        <div class="liens">
-            <button id="themeToggle" aria-label="Changer de thème">
-                <svg id="iconTheme" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="theme-icon" width="30" height="30">
-                     <path stroke-linecap="round" stroke-linejoin="round" d="M21.752 15.002A9.72 9.72 0 0 1 18 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 0 0 3 11.25 C3 16.635 7.365 21 12.75 21a9.753 9.753 0 0 0 9.002-5.998Z" />
-                </svg>
-            </button>
-            <a href="https://github.com/naaazim"><i class="fa fa-github" style="font-size:40px"></i></a>
-            <a href="cvnazim.pdf" class="cv">Télécharger le CV</a>
-        </div>
-        <div class="hamburger" aria-label="menu">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="30" height="30">
-                <path class="icon-path burger" d="M3.75 6.75h16.5M3.75 12h16.5M12 17.25h8.25"
-                      stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                <path class="icon-path close" d="M6 18L18 6M6 6l12 12"
-                      stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-            </svg>
-            <div class="navigation">
-                <div id="barre-oblique"></div>
-                <h2>MENU</h2>
-                <ul class="mobile">
-                    <li><a href="#a-propos" class="mesLiens">A propos</a></li>
-                    <li><a href="#projets" class="mesLiens">Mes projets</a></li>
-                    <li><a href="#contact" class="mesLiens">Contact</a></li>
-                    <li><a href="https://github.com/naaazim" class="mesLiens">Répertoire GitHub</a></li>
-                </ul>
+    <header class="header">
+        <nav class="navbar">
+            <a href="#" class="logo">NH<span class="dot">.</span></a>
+
+            <ul class="nav-links">
+                <li><a href="#about" class="nav-link">À propos</a></li>
+                <li><a href="#skills" class="nav-link">Compétences</a></li>
+                <li><a href="#projects" class="nav-link">Projets</a></li>
+                <li><a href="#certifications" class="nav-link">Certifications</a></li>
+                <li><a href="#contact" class="nav-link btn-contact">Contact</a></li>
+            </ul>
+
+            <div class="nav-controls">
+                <button id="themeToggle" class="theme-btn" aria-label="Changer de thème">
+                    <i class="fa-solid fa-moon"></i>
+                </button>
+                <div class="hamburger" aria-label="Menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
             </div>
-        </div>
-    </nav>
+        </nav>
+    </header>
 
-    <!-- reste inchangé -->
-    <main id="a-propos">
-        <section class="hero">
-            <div class="hero-content">
-                <h1 class="nom">Abderahmane Nazim HAMIA</h1>
-                <p class="subtitle">DÉVELOPPEUR WEB FULL-STACK</p>
-                <div class="entree">
-                    <p class="hero-text">À la croisée du design et du développement, je transforme des lignes de code en expériences digitales fluides, esthétiques et percutantes. Je m'appelle Abderahmane Nazim HAMIA, j'ai 21 ans et je suis étudiant en informatique. passionné par le DevOps et la sécurité informatique, mon objectif est d'imaginer des solutions numériques à la fois intuitives, sécurisées et visuellement élégantes.</p>
-                    <img src="photoTa3i.jpeg" alt="photoTa3i">
+    <main>
+        <!-- Hero Section -->
+        <section id="about" class="hero">
+            <div class="container hero-container">
+                <div class="hero-content">
+                    <span class="badge">Développeur Web Full-Stack</span>
+                    <h1 class="hero-title">Abderahmane <br> <span class="text-gradient">Nazim HAMIA</span></h1>
+                    <p class="hero-description">
+                        À la croisée du design et du développement, je transforme des lignes de code en expériences
+                        digitales fluides, esthétiques et percutantes.
+                        Étudiant en informatique de 21 ans, passionné par le DevOps et la sécurité, je conçois des
+                        solutions numériques intuitives et sécurisées.
+                    </p>
+                    <div class="hero-actions">
+                        <a href="#contact" class="btn btn-primary">Me contacter</a>
+                        <a href="cvnazim.pdf" class="btn btn-outline" target="_blank">
+                            <i class="fa-solid fa-download"></i> Télécharger CV
+                        </a>
+                        <a href="https://github.com/naaazim" target="_blank" class="social-link" aria-label="GitHub">
+                            <i class="fa-brands fa-github"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <div class="image-wrapper">
+                        <img src="photoTa3i.jpeg" alt="Nazim Hamia">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="section skills">
+            <div class="container">
+                <h2 class="section-title">Mes <span class="text-gradient">Compétences</span></h2>
+                <div class="skills-grid">
+                    <div class="skill-card"><i class="devicon-html5-plain colored"></i><span>HTML5</span></div>
+                    <div class="skill-card"><i class="devicon-css3-plain colored"></i><span>CSS3</span></div>
+                    <div class="skill-card"><i class="devicon-javascript-plain colored"></i><span>JavaScript</span>
+                    </div>
+                    <div class="skill-card"><i class="devicon-php-plain colored"></i><span>PHP</span></div>
+                    <div class="skill-card"><i class="devicon-java-plain colored"></i><span>Java</span></div>
+                    <div class="skill-card"><i class="devicon-python-plain colored"></i><span>Python</span></div>
+                    <div class="skill-card"><i class="devicon-react-original colored"></i><span>React</span></div>
+                    <div class="skill-card"><i class="devicon-postgresql-plain colored"></i><span>PostgreSQL</span>
+                    </div>
+                    <div class="skill-card"><i class="devicon-c-plain colored"></i><span>C</span></div>
+                    <div class="skill-card"><i class="devicon-postman-plain colored"></i><span>Postman</span></div>
+                    <div class="skill-card"><i class="devicon-html5-plain colored"></i><span>HTML5</span></div>
+                    <div class="skill-card"><i class="devicon-css3-plain colored"></i><span>CSS3</span></div>
+                    <div class="skill-card"><i class="devicon-javascript-plain colored"></i><span>JavaScript</span>
+                    </div>
+                    <div class="skill-card"><i class="devicon-php-plain colored"></i><span>PHP</span></div>
+                    <div class="skill-card"><i class="devicon-java-plain colored"></i><span>Java</span></div>
+                    <div class="skill-card"><i class="devicon-python-plain colored"></i><span>Python</span></div>
+                    <div class="skill-card"><i class="devicon-react-original colored"></i><span>React</span></div>
+                    <div class="skill-card"><i class="devicon-postgresql-plain colored"></i><span>PostgreSQL</span>
+                    </div>
+                    <div class="skill-card"><i class="devicon-c-plain colored"></i><span>C</span></div>
+                    <div class="skill-card"><i class="devicon-postman-plain colored"></i><span>Postman</span></div>
+                    <div class="skill-card"><i class="devicon-html5-plain colored"></i><span>HTML5</span></div>
+                    <div class="skill-card"><i class="devicon-css3-plain colored"></i><span>CSS3</span></div>
+                    <div class="skill-card"><i class="devicon-javascript-plain colored"></i><span>JavaScript</span>
+                    </div>
+                    <div class="skill-card"><i class="devicon-php-plain colored"></i><span>PHP</span></div>
+                    <div class="skill-card"><i class="devicon-java-plain colored"></i><span>Java</span></div>
+                    <div class="skill-card"><i class="devicon-python-plain colored"></i><span>Python</span></div>
+                    <div class="skill-card"><i class="devicon-react-original colored"></i><span>React</span></div>
+                    <div class="skill-card"><i class="devicon-postgresql-plain colored"></i><span>PostgreSQL</span>
+                    </div>
+                    <div class="skill-card"><i class="devicon-c-plain colored"></i><span>C</span></div>
+                    <div class="skill-card"><i class="devicon-postman-plain colored"></i><span>Postman</span></div>
+                    <div class="skill-card"><i class="devicon-html5-plain colored"></i><span>HTML5</span></div>
+                    <div class="skill-card"><i class="devicon-css3-plain colored"></i><span>CSS3</span></div>
+                    <div class="skill-card"><i class="devicon-javascript-plain colored"></i><span>JavaScript</span>
+                    </div>
+                    <div class="skill-card"><i class="devicon-php-plain colored"></i><span>PHP</span></div>
+                    <div class="skill-card"><i class="devicon-java-plain colored"></i><span>Java</span></div>
+                    <div class="skill-card"><i class="devicon-python-plain colored"></i><span>Python</span></div>
+                    <div class="skill-card"><i class="devicon-react-original colored"></i><span>React</span></div>
+                    <div class="skill-card"><i class="devicon-postgresql-plain colored"></i><span>PostgreSQL</span>
+                    </div>
+                    <div class="skill-card"><i class="devicon-c-plain colored"></i><span>C</span></div>
+                    <div class="skill-card"><i class="devicon-postman-plain colored"></i><span>Postman</span></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="section projects">
+            <div class="container">
+                <h2 class="section-title">Mes <span class="text-gradient">Projets</span></h2>
+                <div class="projects-grid">
+                    <article class="project-card">
+                        <div class="project-content">
+                            <div class="project-header">
+                                <h3>📱 Don't Forget</h3>
+                                <a href="https://dontforget.site" target="_blank" class="project-link"><i
+                                        class="fa-solid fa-external-link-alt"></i></a>
+                            </div>
+                            <p class="project-desc">Application web de gestion de tâches et de rappels intelligents.
+                                Organisation quotidienne via notifications, priorités et rappels automatisés.</p>
+                            <div class="project-tags">
+                                <span>React</span>
+                                <span>Spring Boot</span>
+                                <span>PostgreSQL</span>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="project-card">
+                        <div class="project-content">
+                            <div class="project-header">
+                                <h3>🎯 QuizzMaster</h3>
+                                <span class="status-badge">En cours</span>
+                            </div>
+                            <p class="project-desc">Plateforme d'évaluation interactive pour étudiants et enseignants.
+                                Création, passation et correction automatisée de QCM et examens pratiques.</p>
+                            <div class="project-tags">
+                                <span>React</span>
+                                <span>Spring Boot</span>
+                                <span>PostgreSQL</span>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Certifications Section -->
+        <section id="certifications" class="section certifications">
+            <div class="container">
+                <h2 class="section-title">Mes <span class="text-gradient">Certifications</span></h2>
+                <div class="certif-grid">
+                    <div class="certif-card">
+                        <div class="certif-icon"><i class="fa-brands fa-java"></i></div>
+                        <div class="certif-info">
+                            <h3>Java par la pratique</h3>
+                            <p class="certif-issuer">Udemy</p>
+                            <a href="https://www.udemy.com/certificate/UC-76daa48c-a0cc-4718-9099-5927840f8ca5/"
+                                target="_blank" class="link-arrow">Voir certificat <i
+                                    class="fa-solid fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                    <div class="certif-card">
+                        <div class="certif-icon"><i class="fa-brands fa-aws"></i></div>
+                        <div class="certif-info">
+                            <h3>AWS SimuLearn: Sécurité</h3>
+                            <p class="certif-issuer">AWS</p>
+                            <a href="awsCloudEtSecuriteCertif.pdf" target="_blank" class="link-arrow">Voir certificat <i
+                                    class="fa-solid fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                    <div class="certif-card">
+                        <div class="certif-icon"><i class="fa-brands fa-aws"></i></div>
+                        <div class="certif-info">
+                            <h3>DevOps on AWS</h3>
+                            <p class="certif-issuer">AWS</p>
+                            <a href="devOpsCertif.pdf" target="_blank" class="link-arrow">Voir certificat <i
+                                    class="fa-solid fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section contact">
+            <div class="container">
+                <div class="contact-wrapper">
+                    <div class="contact-info">
+                        <h2 class="section-title">Restons en <span class="text-gradient">Contact</span></h2>
+                        <p>Une idée de projet ? Une question ? N'hésitez pas à m'envoyer un message.</p>
+                        <div class="contact-details">
+                            <div class="contact-item">
+                                <i class="fa-solid fa-envelope"></i>
+                                <span>abderhamia@gmail.com</span>
+                            </div>
+                            <div class="contact-item">
+                                <i class="fa-solid fa-location-dot"></i>
+                                <span>Paris, France</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <form action="index.php" method="post" class="contact-form">
+                        <div class="form-group">
+                            <label for="nom">Nom</label>
+                            <input type="text" name="nom" id="nom" placeholder="Votre nom">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" name="email" id="email" required placeholder="votre@email.com">
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea name="message" id="message" rows="5" placeholder="Votre message..."></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-full">Envoyer le message</button>
+                    </form>
                 </div>
             </div>
         </section>
     </main>
-    <section class="maitrise">
-        <h2>Compétences :</h2>
-        <div class="icones">
-            <i class="devicon-html5-plain colored"></i>
-            <i class="devicon-css3-plain colored"></i>
-            <i class="devicon-javascript-plain colored"></i>
-            <i class="devicon-php-plain colored"></i>
-            <i class="devicon-java-plain colored"></i>
-            <i class="devicon-postgresql-plain colored"></i>
-            <i class="devicon-postman-plain colored"></i>
-            <i class="devicon-react-original colored"></i>
-            <i class="devicon-python-plain colored"></i>
-            <i class="devicon-c-plain colored"></i>
-            <!-- Deux fois pour fluidifier l'animation -->
-            <i class="devicon-html5-plain colored"></i>
-            <i class="devicon-css3-plain colored"></i>
-            <i class="devicon-javascript-plain colored"></i>
-            <i class="devicon-php-plain colored"></i>
-            <i class="devicon-java-plain colored"></i>
-            <i class="devicon-postgresql-plain colored"></i>
-            <i class="devicon-postman-plain colored"></i>
-            <i class="devicon-react-original colored"></i>
-            <i class="devicon-python-plain colored"></i>
-            <i class="devicon-c-plain colored"></i>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; <span id="currentYear"></span> Nazim Hamia. Tous droits réservés.</p>
+            <div class="footer-links">
+                <a href="https://github.com/naaazim" target="_blank" aria-label="GitHub">
+                    <i class="fa-brands fa-github"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/" target="_blank" aria-label="LinkedIn">
+                    <i class="fa-brands fa-linkedin"></i>
+                </a>
+                <a href="https://wa.me/33758845585" target="_blank" aria-label="WhatsApp">
+                    <i class="fa-brands fa-whatsapp"></i>
+                </a>
+            </div>
         </div>
-    </section>
-    <h2 class="certifH2">certifications :</h2>
-    <section class="certif">
-        <div class="java">            
-            <h3>Formation Apprendre JAVA par la pratique – Udemy</h3>
-            <div class="udemy-certif" style="text-align: center;">
-                <img src="udemy.webp" alt="Udemy" class="udemy-dark">
-                <img src="udemy_clair.webp" alt="Udemy clair" class="udemy-light">
-            </div>
-            <p>Contenu :</p>
-            <ol>
-                <li>Apprendre les bases du langage Java</li>
-                <li>Apprivoiser les concepts avancés ainsi que les nouveautés du langage</li>
-                <li>Maîtriser la Programmation Orientée Objet</li>
-                <li>Utiliser les best practices de codage pour se distinguer</li>
-            </ol>
-            <a href="https://www.udemy.com/certificate/UC-76daa48c-a0cc-4718-9099-5927840f8ca5/">
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
-                <path stroke-linecap="round" stroke-linejoin="round"
-                        d="M13.5 6H5.25A2.25 2.25 0 0 0 3 8.25v10.5A2.25 2.25 0 0 0 5.25 21h10.5A2.25 2.25 0 0 0 18 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25" />
-                </svg>
-            </a>          
-        </div>
-
-        <div class="securite">
-            <h3>AWS SimuLearn: Concepts de sécurité fondamentaux</h3>
-            <div class="aws-certif" style="text-align: center;">
-                <img src="aws.webp" alt="AWS" class="aws-dark">
-                <img src="aws_clair.png" alt="AWS clair" class="aws-light">
-            </div>
-            <p>Contenu :</p>
-            <ol>
-                <li>Comparer les utilisateurs, rôles et groupes IAM et leurs processus de création.</li>
-                <li>Analyser la structure et les composants des politiques IAM.</li>
-                <li>Expliquer le modèle de responsabilité partagée AWS et les programmes de conformité.</li>
-                <li>Mettre en œuvre les bonnes pratiques IAM pour une gestion sécurisée des accès.</li>
-            </ol>
-            <a href="awsCloudEtSecuriteCertif.pdf">
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                stroke-width="1.5" stroke="currentColor" class="size-6">
-                <path stroke-linecap="round" stroke-linejoin="round"
-                    d="M13.5 6H5.25A2.25 2.25 0 0 0 3 8.25v10.5A2.25 2.25 0 0 0 5.25 21h10.5A2.25 2.25 0 0 0 18 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25" />
-                </svg>
-            </a>
-        </div>
-        
-        <div class="devOps">
-            <h3>Getting Started with DevOps on AWS</h3>
-            <div class="aws-certif" style="text-align: center;">
-                <img src="aws.webp" alt="AWS" class="aws-dark">
-                <img src="aws_clair.png" alt="AWS clair" class="aws-light">
-            </div>
-            <p>Contenu :</p>
-            <ol>
-                <li>Décrire les méthodologies de la culture, des pratiques et des outils DevOps</li>
-                <li>Expliquer pourquoi l'adoption d'un état d'esprit qui soutient une culture DevOps est essentielle à la mise en œuvre de DevOps</li>
-                <li>Décrire la transformation d'Amazon vers DevOps</li>
-                <li>Catégoriser et décrire les principaux services AWS DevOps qui prennent en charge le cycle de vie des applications</li>
-                <li>Identifier les services AWS utilisés pour automatiser le processus d'intégration et de livraison continues (CI/CD)</li>
-                <li>Décrire comment créer et contrôler un pipeline CI/CD</li>
-            </ol>
-            <a href="devOpsCertif.pdf">
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                stroke-width="1.5" stroke="currentColor" class="size-6">
-                <path stroke-linecap="round" stroke-linejoin="round"
-                    d="M13.5 6H5.25A2.25 2.25 0 0 0 3 8.25v10.5A2.25 2.25 0 0 0 5.25 21h10.5A2.25 2.25 0 0 0 18 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25" />
-                </svg>
-            </a>
-        </div>
-    </section>
-    <section id="projets" class="projets">
-        <h1>Mes projets</h1>
-
-        <div class="liste-projets">
-            
-            <div class="projet">
-            <h3>📱 Don't Forget</h3>
-            <p class="description">
-                <strong>Don'tForget</strong> est une application web de gestion de tâches et de rappels intelligents.  
-                Elle aide les utilisateurs à organiser leurs journées grâce à un système de notifications, de priorités et de rappels automatisés.
-            </p>
-            <div class="infos">
-                <p><span>Développement :</span> React, Spring Boot, PostgreSQL</p>
-                <p><span>Fonctionnalités :</span> rappels automatiques, gestion par catégories, interface responsive</p>
-                <p><span>Statut :</span> <a href="https://dontforget.site" target="_blank">En ligne</a></p>
-            </div>
-            </div>
-
-            <div class="projet">
-            <h3>🎯 QuizzMaster</h3>
-            <p class="description">
-                <strong>QuizzMaster</strong> est une plateforme d’évaluation interactive pour étudiants et enseignants.  
-                Elle permet la création, la passation et la correction automatisée de QCM et d’examens pratiques en temps réel.
-            </p>
-            <div class="infos">
-                <p><span>Développement :</span> React, Spring Boot, PostgreSQL</p>
-                <p><span>Fonctionnalités :</span> gestion des utilisateurs, chronométrage, statistiques de performance</p>
-                <p><span>Statut :</span> En cours de déploiement</p>
-            </div>
-            </div>
-
-        </div>
-    </section>
-
-    </section>
-
-
-    <section class="contact" id="contact">
-        <h2>CONTACT :</h2>
-        <form action="index.php" method="post">
-            <label for="nom">Nom:</label>
-            <input type="text" name="nom" id="nom">
-            <label for="email">Email:</label>
-            <input type="email" name="email" id="email" required>
-            <label for="message">Message:</label>
-            <textarea name="message" id="message"></textarea>
-            <div class="div-soumission">
-                <button type="submit" class="envoyer">Envoyer</button>
-            </div>
-        </form>
-    </section>
-    <div id="popUp" style="display: none;">
-        <p>Votre message a bien été envoyé</p>
-        <img src="success.gif" alt="succes" width="120">
-        <button class="fermer" onclick="fermer()">&#10005;</button>
-    </div>
-    <footer>
-        <p>&copy;nazimhamia.fr&nbsp; All rights reserved.</p>
     </footer>
+
+    <!-- Popup Success -->
+    <div id="popUp" class="popup-overlay" style="display: none;">
+        <div class="popup-content">
+            <div class="popup-icon">
+                <i class="fa-solid fa-check-circle"></i>
+            </div>
+            <h3>Message envoyé !</h3>
+            <p>Merci de m'avoir contacté. Je vous répondrai dans les plus brefs délais.</p>
+            <button class="btn btn-primary" onclick="fermer()">Fermer</button>
+        </div>
+    </div>
+
     <script src="contact/script.js"></script>
 </body>
+
 </html>
