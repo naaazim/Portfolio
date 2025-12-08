@@ -452,6 +452,13 @@ h6 {
     font-size: 1.5rem;
 }
 
+.project-actions {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-left: auto;
+}
+
 .project-link {
     color: var(--text-muted);
     font-size: 1.2rem;
@@ -631,6 +638,7 @@ h6 {
 
 .form-group textarea {
     resize: vertical;
+    min-height: 7.5rem; /* assure au moins ~5 lignes visibles */
 }
 
 .form-group input:focus,
